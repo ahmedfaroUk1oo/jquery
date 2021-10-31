@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="موقع شخصي">
+    <meta name="author" content="الاسم">
+    <title>الموقع الشخصي</title>
+    <!-- render all elements normally  -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- font awesome library  -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- main css file  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section id="header">
+            <div id="branding" style="flex-grow: 8;">
+            <h1><a href="index.html"><i class="fa fa-user-circle"></i> صفحة <span class="highlight">اسم الطالب</span></a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li ><a href="index.html">الرئيسية</a></li>
+                    <li class="current"><a href="gallery.html">معرض الأعمال</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section id="slider">
+            <div id="wrapper">
+                <div class="content">
+                    <img src="images/1.png" alt="">
+                </div>
+                <div class="content">
+                    <img src="images/2.png" alt="">
+                </div>
+                <div class="content">
+                    <img src="images/3.png" alt="">
+                </div>
+                <div class="content">
+                    <img src="images/4.png" alt="">
+                </div>
+            </div>
+            <!-- navLinks that can wrap the photos -->
+            <div id="navLinks">
+                <ul>
+                    <li class="itemLinks" data-pos="0"></li>
+                    <li class="itemLinks" data-pos="1"></li>
+                    <li class="itemLinks" data-pos="2"></li>
+                    <li class="itemLinks" data-pos="3"></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="footer">
+            <p>الصفحة الشخصية لاسم المسجل &copy;  <span id="currentYear"></span></p>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+</html>
